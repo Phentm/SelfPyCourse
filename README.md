@@ -1,0 +1,1 @@
+Solutions for exercises from "Self.Py" course, hosted on "https://campus.gov.il/"
