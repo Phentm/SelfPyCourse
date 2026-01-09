@@ -1,10 +1,4 @@
-def check_valid_input(letter_guessed, old_letters_guessed):
-    letter_guessed = str(letter_guessed)
-
-    return (len(letter_guessed) == 1
-            and letter_guessed.isalpha()
-            and letter_guessed.isascii()
-            and letter_guessed.lower() not in old_letters_guessed)
+from ex_6_4_1 import check_valid_input
 
 def try_update_letter_guessed(letter_guessed, old_letters_guessed):
     if check_valid_input(letter_guessed, old_letters_guessed):

@@ -1,10 +1,8 @@
 def check_valid_input(letter_guessed, old_letters_guessed):
-    letter_guessed = str(letter_guessed).lower()
-
     return (len(letter_guessed) == 1
             and letter_guessed.isalpha()
             and letter_guessed.isascii()
-            and letter_guessed not in old_letters_guessed)
+            and letter_guessed.lower() not in old_letters_guessed)
 
 def main():
     old_letters = ['a', 'b', 'c']
